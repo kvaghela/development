@@ -1,5 +1,6 @@
 package com.coding.codility;
 
+import org.junit.Assert;
 public class BinaryGapSolution {
         public int solution(int N) {
             // write your code in Java SE 8
@@ -33,9 +34,9 @@ public class BinaryGapSolution {
 
     public static void main(String[] args) {
         BinaryGapSolution binaryGapSolution = new BinaryGapSolution();
-        System.out.println(binaryGapSolution.solution(6));
+        Assert.assertEquals(0, binaryGapSolution.solution(6));
 
-        System.out.println(binaryGapSolution.solution(328));
-        System.out.println(binaryGapSolution.solution(4545));
+        Assert.assertEquals(2, binaryGapSolution.solution(328));
+        Assert.assertEquals(5, binaryGapSolution.solution(4545));
     }
 }
