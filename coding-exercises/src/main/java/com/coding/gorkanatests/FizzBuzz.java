@@ -1,4 +1,4 @@
-package com.coding.fizzbuzz;
+package com.coding.gorkanatests;
 
 public class FizzBuzz {
 
@@ -36,7 +36,9 @@ public class FizzBuzz {
         return string.toString();
     }
 
-    public static void main(String[] args){
-        System.out.println(new FizzBuzz().toString(20));
-    }
+//    public static void main(String[] args){
+//          GOT A TEST TO RUN THIS
+//        System.out.println(new FizzBuzz().toString(20));
+//
+//    }
 }
