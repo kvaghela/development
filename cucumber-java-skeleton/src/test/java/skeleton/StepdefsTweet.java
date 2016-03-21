@@ -1,9 +1,7 @@
 package skeleton;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -33,42 +31,12 @@ public class StepdefsTweet {
         driver.findElement(By.xpath("//form[@data-element='login']/div[@class='LoginForm-rememberForgot']/label/input")).click();
 
         driver.findElement(By.xpath("//form[@data-element='login']/input[@value='Log in']")).click();
+
+    }
+
+    @Then("^I close browser$")
+    public void i_close_browser() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
         driver.close();
-    }
-
-    @Given("^I am on the twitter home page$")
-    public void i_am_on_the_twitter_home_page() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @When("^I click on the “Compose new Tweet\\.\\.\\.” text field$")
-    public void i_click_on_the_Compose_new_Tweet_text_field() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @When("^I enter in the message “Hello, this is my first message”$")
-    public void i_enter_in_the_message_Hello_this_is_my_first_message() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @When("^I click “Tweet”$")
-    public void i_click_Tweet() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @When("^I wait for a few seconds$")
-    public void i_wait_for_a_few_seconds() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    @Then("^I should see “Hello, this is my first message”$")
-    public void i_should_see_Hello_this_is_my_first_message() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
     }
 }

@@ -6,6 +6,7 @@ Feature: Tweeting
     And I enter in the “username” field “myusername”
     And I enter in the “password” field “password1”
     And I click on “Sign In”
+    Then I close browser
 #    And I am on the twitter home page
 #    When I click on the “Compose new Tweet...” text field
 #    And I enter in the message “Hello, this is my first message”
